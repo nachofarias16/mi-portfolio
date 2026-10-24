@@ -52,3 +52,23 @@ nav a {
     font-size: clamp(3rem, 12vw, 9rem);
     line-height: 1;
 }
+
+.boton {
+    display: inline-block;
+    margin-top: 32px;
+    padding: 12px 32px;
+    background: var(--negro);
+    color: var(--blanco);
+    font-family: "Anton", sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    clip-path: polygon(0 10%, 100% 0, 96% 100%, 3% 90%);
+    transition: transform 0.20s;
+}
+
+.boton:hover {
+    background: var(--blanco);
+    color: var(--negro);
+    transform: rotate(-3deg) scale(1.05);
+}
