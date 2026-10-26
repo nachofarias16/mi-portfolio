@@ -1,74 +1,105 @@
 :root {
-    --rojo: #e3262e;
-    --negro: #0d0d0d;
-    --blanco: #fafafa;
+  --rojo: #e3262e;
+  --negro: #0d0d0d;
+  --blanco: #fafafa;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: var(--negro);
-    color: var(--blanco);
-    font-family: "Archivo Narrow", sans-serif;
+  background: var(--negro);
+  color: var(--blanco);
+  font-family: "Archivo Narrow", sans-serif;
 }
 
-h1, h2 {
-    font-family: "Anton", Impact, sans-serif;
-    text-transform: uppercase;
+h1,
+h2 {
+  font-family: "Anton", Impact, sans-serif;
+  text-transform: uppercase;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 24px;
-    border-bottom: 4px solid var(--rojo);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  border-bottom: 4px solid var(--rojo);
 }
 
 .logo {
-    font-family: "Anton", sans-serif;
-    font-size: 1.5rem;
-    color: var(--rojo);
-    text-decoration: none;
+  font-family: "Anton", sans-serif;
+  font-size: 1.5rem;
+  color: var(--rojo);
+  text-decoration: none;
 }
 
 nav a {
-    color: var(--blanco);
-    text-decoration: none;
-    text-transform: uppercase;
-    margin-left: 24px;
+  color: var(--blanco);
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 24px;
 }
 
 .hero {
-    background: var(--rojo);
-    padding: 96px 24px;
+  background: var(--rojo);
+  padding: 96px 24px;
 }
 
 .hero h1 {
-    font-size: clamp(3rem, 12vw, 9rem);
-    line-height: 1;
+  font-size: clamp(3rem, 12vw, 9rem);
+  line-height: 1;
 }
 
 .boton {
-    display: inline-block;
-    margin-top: 32px;
-    padding: 12px 32px;
-    background: var(--negro);
-    color: var(--blanco);
-    font-family: "Anton", sans-serif;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    clip-path: polygon(0 10%, 100% 0, 96% 100%, 3% 90%);
-    transition: transform 0.20s;
+  display: inline-block;
+  margin-top: 32px;
+  padding: 12px 32px;
+  background: var(--negro);
+  color: var(--blanco);
+  font-family: "Anton", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  clip-path: polygon(0 10%, 100% 0, 96% 100%, 3% 90%);
+  transition: transform 0.2s;
 }
 
 .boton:hover {
-    background: var(--blanco);
-    color: var(--negro);
-    transform: rotate(-3deg) scale(1.05);
+  background: var(--blanco);
+  color: var(--negro);
+  transform: rotate(-3deg) scale(1.05);
+}
+.linea {
+  display: block;
+}
+
+.segunda {
+  margin-left: clamp(2rem, 8vw, 6rem);
+}
+
+.letra {
+  display: inline-block;
+  padding: 0 0.12em;
+  margin: 0 0.02em;
+  background: var(--blanco);
+  color: var(--negro);
+  line-height: 1;
+}
+
+.letra:nth-child(2n) {
+  background: var(--negro);
+  color: var(--blanco);
+  transform: rotate(-4deg);
+}
+
+.letra:nth-child(3n) {
+  transform: rotate(3deg) translateY(-6px);
+}
+
+.letra:nth-child(5n) {
+  clip-path: polygon(0 8%, 100% 0, 94% 100%, 6% 92%);
 }
