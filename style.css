@@ -45,8 +45,19 @@ nav a {
 }
 
 .hero {
-  background: var(--rojo);
+  background-color: var(--rojo);
+  background-image:
+    radial-gradient(rgba(0, 0, 0, 0.32) 1.3px, transparent 1.5px),
+    repeating-conic-gradient(
+      from 0deg at 78% 38%,
+      rgba(0, 0, 0, 0.18) 0deg 8deg,
+      transparent 8deg 20deg
+    );
+  background-size:
+    13px 13px,
+    100% 100%;
   padding: 96px 24px;
+  overflow: hidden;
 }
 
 .hero h1 {
